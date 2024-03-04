@@ -1,8 +1,4 @@
-<p align="center">
-  <img src="logo.png" width="100" height="100" alt="Gemini Hub Logo" style="float:left; margin-right:10px;">
-</p>
-
-<h1 align="left">Gemini Hub [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gemini-centre.streamlit.app/)</h1>
+# Gemini Hub [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://gemini-centre.streamlit.app/)
 
 Gemini Pro Hub is a Streamlit app that integrates various features powered by Google's GEMINI models, including a chatbot, image captioning, and text embedding.
 
