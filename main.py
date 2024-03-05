@@ -7,8 +7,6 @@ from gemini import (load_gemini_pro_model,
                             gemini_pro_vision_response,
                             embeddings_model_response)
 
-
-
 st.set_page_config(
     page_title="Gemini Hub",
     page_icon="logo.png",
@@ -35,14 +33,12 @@ with st.sidebar:
     st.subheader("Don't have a Gemini API Key?")
     st.write("Visit Google [AiStudio](https://aistudio.google.com/app/apikey) and log in with your Google account. Then click on 'Create API Key'.")
 
-
 # Function to translate roles between Gemini-Pro and Streamlit terminology
 def translate_role_for_streamlit(user_role):
     if user_role == "model":
         return "assistant"
     else:
         return user_role
-
 
 # chatbot page
 if selected == 'ChatBot':
@@ -73,7 +69,6 @@ if selected == 'ChatBot':
         with st.chat_message("assistant"):
             st.markdown(gemini_response.text)
 
-
 # Image captioning page
 if selected == "Image Captioning":
 
@@ -98,7 +93,6 @@ if selected == "Image Captioning":
         with col2:
             st.info(caption)
 
-
 # text embedding model
 if selected == "Embed text":
 
@@ -119,4 +113,3 @@ if selected == "About":
     st.write("- Chatbot: Utilizes the Gemini Pro model for conversational AI.")
     st.write("- Image Captioning: Uses the Gemini-Pro-Vision model for generating captions for images.")
     st.write("- Text Embedding: Utilizes the embeddings-001 model for converting text to embeddings.")
-
